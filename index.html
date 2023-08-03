@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <script src="https://kit.fontawesome.com/d5f17e5aa9.js" 
+    crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary shadow-sm w-100"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+      <h1 id="city">
+          Chalchuapa, El Salvador</h1>
+      <h2 id="date-time"></h2>
+      <div class="container text-left">
+          <div class="row">
+              <div class="col-6">
+                  <div class="temperature-wrapper">
+                      <p id="temperature">
+                          <span class="temperature-icon">
+                              <i class="fa-solid fa-sun fa-2xl" style="color: #ffde0a;"></i>
+                          </span>
+                          <div>
+                              <span class="units fs-5">
+                                  <a href="#" class="temperature" id="celsius-link">°C</a> | 
+                                  <a href="#" class="temperature" id="fahrenheit-link">°F</a>
+                              </span>
+                            </div>
+                      </p>
+                      <p>
+                          Percipitation: 0%<br>
+                          Humidity: 79%<br>
+                          Wind: 5km/h
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <div class="row" class="today-weather">
+        <div class="col-3">Monday</div>
+        <div class="col-3"><span style="font-size:1em"> <i class="fa-solid fa-sun fa-2xl" style="color: #ffde0a;"></i></span></div>
+        <div class="col-3">33°/21°</div>
+      </div></br>
+      <div class="row" class="today-weather">
+          <div class="col-3">Tuesday</div>
+          <div class="col-3"><span style="font-size:1em"> <i class="fa-solid fa-cloud-rain fa-2xl" style="color: #585A5C;"></i></span></div>
+          <div class="col-3">31°/21°</div>
+        </div></br>
+        <div class="row" class="today-weather">
+            <div class="col-3">Wednesday</div>
+            <div class="col-3"><span style="font-size:1em"><i class="fa-solid fa-cloud-sun fa-2xl" style="color: #ffde0a;"></i></div>
+            <div class="col-3">33°/20°</div>
+          </div></br>
+          <div class="row" class="today-weather">
+              <div class="col-3">Thursday</div>
+              <div class="col-3"><span style="font-size:1em"><i class="fa-solid fa-cloud-bolt fa-2xl" style="color: #0c3273;"></i></div>
+              <div class="col-3">33°/21°</div>
+            </div></br>
+            <div class="row" class="today-weather">
+                <div class="col-3">Friday</div>
+                <div class="col-3"><span style="font-size:1em"><i class="fa-solid fa-cloud-bolt fa-2xl" style="color: #0c3273;"></i></div>
+                <div class="col-3">32°/21°</div>
+              </div></br>
+              <div class="row" class="today-weather">
+                  <div class="col-3">Saturday</div>
+                  <div class="col-3"><span style="font-size:1em"><i class="fa-solid fa-cloud-sun fa-2xl" style="color: #ffde0a;"></i></div>
+                  <div class="col-3">32°/20°</div>
+ <footer>
+  <a href="https://github.com/arivas0205/weather-app.git"
+  >Open source code GitHub</a>
+  by Alicia Rivas | hosted by 
+ <a href="https://www.netlify.com/">Netlify</a>"
+ </footer>                       
+<script src="src/index.js"></script>
+</body>
+</html>
